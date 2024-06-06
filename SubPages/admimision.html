@@ -22,9 +22,224 @@
     </h1>
     <p>Esta es la pagina de Admisiones</p>
     <form>
-        <h2>Campus y Carrera al que solicita admision</h2>
+        <h2>Campus y Carrera al que solicita admision</h2><br>
+        <label>Campus*</label><br>
+        <input type="radio" name="campus">Campus de Santiago
+        <input type="radio" name="campus">Campus de Santo Domingo
+        <br>
+        <br>
+        <label>Periodo de ingreso que desea solicitar*</label><br>
+        <input type="radio" name="periodo">Septiempre 2024
+
+        <h2>I. Información General del Solicitante</h2>
         <label for="nombre">Nombres*</label>                                               
         <input type="text" size="35" id="nombre" maxlength="35">
+
+        <label for="apellido">Apellidos*</label>
+        <input type="text" size="35" id="apellido" maxlength="35">
+        <br>
+        <br>
+        <label for="fechaNacimiento">Fecha de Nacimiento*</label>
+        <input type="date" id="fechaNacimiento">
+
+        <label for="sexo">Sexo*</label>
+        <select id="sexo">
+            <option value="">Seleccionar</option>
+            <option value="">Masculino</option>
+            <option value="">Femenino</option>
+            <option value="">No especificar</option>
+        </select>
+
+        <label for="cedula">Cedula de Indentidad y Electoral/ Pasaporte*</label>
+        <input type="text" placeholder="Favor llenar solo con numeros, sin guion ni espacios." id="cedula" size = "70" maxlength="20">
+        <br>
+        <br>
+        <label for="estadoCivil">Estado Civil*</label>
+        <select id="estadoCivil">
+            <option value="">Seleccionar</option>
+            <option value="">Soltero</option>
+            <option value="">Casado</option>
+            <option value="">No especificar</option>
+        </select>
+        
+        <label for="nacionalidad">Nacionalidad*</label>
+        <input type="text" id="nacionalidad">
+
+       <label for="lengua">Lengua Materna*</label>
+       <select id="lengua">
+        <option value="">Seleccionar</option>
+        <option value="">Español</option>
+        <option value="">Ingles</option>
+        <option value="">Frances</option>
+        <option value="">Creol</option>
+        <option value="">Portugues</option>
+        <option value="">Aleman</option>
+        <option value="">Otro</option>
+       </select>
+       <br>
+       <br>
+
+       <label for="paisNacimiento">País de Origen</label>
+       <select id="paisNacimiento">
+            <option value="">Seleccionar</option>
+            <option value="">Republica Dominicana</option>
+            <option value="">Mexico</option>
+            <option value="">Haiti</option>
+            <option value="">Panama</option>
+            <option value="">Otro</option>
+       </select>
+
+       <label for="paisResidencia">País de Residencia Actual</label>
+       <select id="paisResidencia">
+            <option value="">Seleccionar</option>
+            <option value="">Republica Dominicana</option>
+            <option value="">Mexico</option>
+            <option value="">Haiti</option>
+            <option value="">Panama</option>
+            <option value="">Otro</option>
+       </select>
+       <br>
+       <br>
+
+       <label for="provinciaNacimiento">Estado/Provincia de Nacimiento</label>
+       <input type="text" id="provinciaNacimiento">
+
+       <label for="provinciaResidencia">Estado/Provincia de Residencia Habitual</label>
+       <input type="text" id="provinciaResidencia"><br>
+
+       <p>---Dirección Actual---</p>
+       <label for="calle">Calle*</label>
+       <input type="text" id="calle">
+
+       <label for="noCasaOapto"># de Casa o Apartamento*</label>
+       <input type="text" id="noCasaOapto">
+
+       <label for="sector">Sector*</label>
+       <input type="text" id="sector">
+       <br>
+       <br>
+       <label for="ciudad">Ciudad*</label>
+       <input type="text" id="ciudad">
+
+       <label for="provincia2">Provincia*</label>
+       <input type="text" id="provincia2">
+       <br>
+       <br>
+       <label for="paisResidencia">Pais de Residencia</label>
+       <select id="paisResidencia">
+        <option value="">Seleccionar</option>
+        <option value="">Republica Dominicana</option>
+        <option value="">Mexico</option>
+        <option value="">Haiti</option>
+        <option value="">Panama</option>
+        <option value="">Otro</option>
+       </select>
+
+       <label for="zipCode">Codigo Postal*</label>
+       <input type="text" id="zipCode">
+       <label for="telefono">Teléfono*</label>
+       <input type= "tel" id="telefono" size="10" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+       <label for="celular">Celular*</label>
+       <input type= "tel" id="celular" size="10" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+       <label for="correo">Email*</label>
+       <input type="email" id="correo">
+       <br>
+       <br>
+       <label for="medioDeEnterarse">¿Por cuál medio te enteraste de la oferta del TEP?</label><br>
+       <select id="medioDeEnterarse">
+            <option value="">Seleccionar</option>
+            <option value="">Redes Sociales</option>
+            <option value="">Familiares</option>
+            <option value="">Amistades</option>
+            <option value="">Otro</option>
+       </select>
+       <h2>II. Información de Salud</h2>
+       <label for="tipoSangre">Tipo de Sangre</label>
+       <select id="tipoSangre">
+        <option value="">Seleccionar</option>
+        <option value="">A+</option>
+        <option value="">B+</option>
+        <option value="">O+</option>
+        <option value="">AB+</option>
+        <option value="">A-</option>
+        <option value="">B-</option>
+        <option value="">O-</option>
+        <option value="">AB-</option>
+       </select>
+
+       <label for="alergia">Alergias</label>
+       <input type="text" id="alergia">
+       <br>
+       <br><label for="preguntaSeguro">¿Tiene Usted Seguro de Salud?</label>
+       <br><input type="radio" name="preguntaSeguro">Si
+       <br><input type="radio" name="preguntaSeguro">No
+
+       <br>
+       <br><label for="preguntaExamen">¿Usted necesita algún acomodo razonable para tomar el examen de admisión?</label>
+       <br><input type="radio" name="preguntaExamen">Si
+       <br><input type="radio" name="preguntaExamen">No
+
+       <br>
+       <br><label for="preguntaRequerimiento">¿Tiene Usted algún requerimineto de accesibilidad?*</label>
+       <p>NOTA: La PUCMM, como institución católica y de servicio a la sociedad, está abierta a todas las personas, por lo que en su proceso de admisión asegura la inclusión educativa de las personas con discapacidad.</p>
+       <input type="radio" name="preguntaRequerimiento">Si
+       <input type="radio" name="preguntaRequerimiento">No
+       <br>
+       <h2>III. Información Académica</h2>
+       <label>A. ESTUDIOS SECUNDARIOS</label>
+       <br><label for="preguntaEstudiosSecundarios">¿Completó sus estudios secundarios?*</label>
+       <input type="radio" name="preguntaEstudiosSecundarios">Si
+       <input type="radio" name="preguntaEstudiosSecundarios">No
+       <br>
+       <br>
+       <label for="preguntaTipoSecundaria">¿En qué tipo de institución se graduó/graduará?*</label>
+       <input type="radio" name="preguntaTipoSecundaria">Si
+       <input type="radio" name="preguntaTipoSecundaria">No
+       <input type="radio" name="preguntaTipoSecundaria">No especifica<br>
+       <br>
+       <label for="graduacion">Año de graduacion*</label>
+       <input type="text" id="graduacion">
+       <br>
+       <br>
+       <label for="institucion">Nombre de la Institución*</label>
+       <input type="text" id="institucion">
+       <label for="direccionInstitucion">Dirección de la Institución</label>
+       <input type="text" id="direccionInstitucion">
+       <br>
+       <br>
+       <label for="ciudad">Ciudad*</label>
+       <input type="text" id="ciudad">
+       <label for="provinciaEscuelaSecundaria">Provincia*</label>
+       <input type="text" id="provinciaEscuelaSecundaria">
+       <br>
+       <br>
+       <label for="paisEscuelaSecundaria">País</label>
+       <select id="paisEscuelaSecundaria">
+        <option value="">Seleccionar</option>
+        <option value="">Republica Dominicana</option>
+        <option value="">Mexico</option>
+        <option value="">Haiti</option>
+        <option value="">Panama</option>
+        <option value="">Otro</option>
+       </select>
+       <label for="telefonoEscuelaSecundaria">Telefono</label>
+       <input type= "tel" id="telefonoEscuelaSecundaria" size="10" maxlength="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+       <br>
+       <br>
+       <label for="preguntaEstudiosIdioma">¿Ha cursado sus estudios primarios y/o secundarios en otro idioma diferente al español?*</label><br>
+       <input type="radio" name="preguntaEstudiosIdioma">Si
+       <input type="radio" name="preguntaEstudiosIdioma">No
+       <br>
+       <br>
+       <label>B. ESTUDIOS UNIVERSITARIOS</label>
+       <br>
+       <br>
+       <label for="preguntaEstudiosUniversitarios">¿Ha realizado estudios universitarios previos?*</label><br>
+       <input type="radio" name="preguntaEstudiosUniversitarios">Si
+       <input type="radio" name="preguntaEstudiosUniversitarios">No
+       <br>
+       <br>
+       <input type="submit">
     </form>
 </body>
 </html>
